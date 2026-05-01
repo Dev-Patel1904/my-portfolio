@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2010/2010990.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Patel — Portfolio</title>
+  <script type="module" crossorigin src="script.js"></script>
+  <link rel="stylesheet" crossorigin href="style.css">
+</head>
+
+<body>
+  <div id="root">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <nav class="nav">
+      <div class="nav-logo">DP.</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" aria-label="Toggle menu" data-hover="true">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <main>
+      <!-- ========== HERO ========== -->
+      <section class="hero" id="hero">
+        <div style="position:absolute;inset:0;background:radial-gradient(75% 55% at 65% 38%,rgba(56,189,248,0.06) 0%,transparent 60%),radial-gradient(55% 65% at 18% 78%,rgba(192,132,252,0.08) 0%,transparent 60%);pointer-events:none;"></div>
+
+        <div class="hero-orb" style="width:460px;height:460px;background:rgba(192,132,252,0.13);top:-12%;right:2%;animation:orbFloat1 8s ease-in-out infinite;"></div>
+        <div class="hero-orb" style="width:300px;height:300px;background:rgba(56,189,248,0.1);right:22%;bottom:8%;animation:orbFloat2 10s ease-in-out infinite;"></div>
+        <div class="hero-orb" style="width:220px;height:220px;background:rgba(244,114,182,0.09);top:18%;left:-4%;animation:orbFloat3 12s ease-in-out infinite;"></div>
+
+        <div style="position:relative;z-index:2;max-width:780px;">
+          <div class="hero-tag"><span class="hero-pulse"></span>✦ Available for opportunities</div>
+          <h1 class="hero-name"><span class="hero-name-gradient">Dev</span><br>Patel</h1>
+          <p class="hero-role"><strong>PHP Developer<span class="hero-cursor">&nbsp;</span></strong></p>
+          <p class="hero-desc">“I am a passionate fresher with a strong interest in backend development and foundational front-end design skills, eager to build scalable systems and responsive web experiences.</p>
+          <div class="hero-btns">
+            <a href="#projects" class="btn-primary" data-hover="true"><span>▶</span> View Projects</a>
+          </div>
+          <div class="hero-social">
+            <a href="https://github.com/Dev-Patel1904/" target="_blank" rel="noreferrer" class="social-pill" data-hover="true"><span>⌥</span> GitHub</a>
+            <a href="https://www.linkedin.com/in/dev-patel-883502374/" target="_blank" rel="noreferrer" class="social-pill" data-hover="true"><span>💼</span> LinkedIn</a>
+            
+          </div>
+        </div>
+
+        <div class="hero-scroll-hint">
+          <div class="scroll-line"></div>Scroll
+        </div>
+      </section>
+
+      <!-- ========== ABOUT ========== -->
+      <section class="section section--surface" id="about">
+        <div class="about-grid">
+          <div class="avatar-wrap reveal">
+            <div class="avatar-ring">
+              <div class="avatar-inner"><span>DP</span></div>
+            </div>
+            <div class="avatar-badge"><span class="badge-green"></span>Currently Interning</div>
+          </div>
+          <div class="reveal" style="transition-delay:0.1s">
+            <div style="margin-bottom:2.5rem">
+              <div class="section-label">About Me</div>
+              <h2 class="section-title">Building Things<br>That Matter</h2>
+            </div>
+            <p style="color:var(--muted);line-height:1.82;margin-bottom:1rem;font-size:0.97rem;">Hi, I'm Dev Patel. I'm passionate about learning new technologies and building modern web applications. I specialize in creating interactive, elegant, and user-focused digital experiences.</p>
+            <p style="color:var(--muted);line-height:1.82;margin-bottom:1rem;font-size:0.97rem;">I am currently interning as a Software Engineer Intern at Skynet Global System, working on real-world projects and gaining hands-on experience in backend development.</p>
+            <p style="color:var(--muted);line-height:1.82;margin-bottom:2rem;font-size:0.97rem;">I enjoy solving problems, collaborating with teams, and turning ideas into beautiful and functional web experiences.</p>
+            <div class="about-stats">
+              <div class="card stat-box" data-hover="true">
+                <div class="stat-num">3+</div>
+                <div class="stat-label">Projects Built</div>
+              </div>
+              <div class="card stat-box" data-hover="true">
+                <div class="stat-num">12+</div>
+                <div class="stat-label">Technologies Known</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== SKILLS ========== -->
+      <section class="section" id="skills">
+        <div class="reveal" style="margin-bottom:3rem">
+          <div class="section-label">Technical Skills</div>
+          <h2 class="section-title">My Toolkit</h2>
+          <p class="section-sub">Technologies and tools I use to build modern, scalable applications.</p>
+        </div>
+        <div class="skill-tabs">
+          <button class="skill-tab active" data-hover="true"><span class="tab-bg"></span><i class="fa-solid fa-code"></i>Languages<span class="tab-count">4</span></button>
+          <button class="skill-tab" data-hover="true"><span class="tab-bg"></span><i class="fa-solid fa-layer-group"></i>Frontend<span class="tab-count">4</span></button>
+          <button class="skill-tab" data-hover="true"><span class="tab-bg"></span><i class="fa-solid fa-server"></i>Backend<span class="tab-count">4</span></button>
+          <button class="skill-tab" data-hover="true"><span class="tab-bg"></span><i class="fa-solid fa-database"></i>Databases<span class="tab-count">3</span></button>
+          <button class="skill-tab" data-hover="true"><span class="tab-bg"></span><i class="fa-solid fa-screwdriver-wrench"></i>Tools<span class="tab-count">4</span></button>
+        </div>
+        <div class="skills-panel"></div>
+      </section>
+
+      <!-- ========== EXPERIENCE ========== -->
+      <section class="section section--surface" id="experience">
+        <div class="reveal" style="margin-bottom:3rem">
+          <div class="section-label">Where I've Worked</div>
+          <h2 class="section-title">Work Experience</h2>
+        </div>
+        <div class="exp-timeline">
+          <div class="exp-timeline-item">
+            <div class="exp-dot"><div class="exp-dot-inner"></div></div>
+            <div class="exp-card-new reveal" style="transition-delay:0s">
+              <div class="exp-top-row">
+                <div>
+                  <div class="exp-role-new">Laravel Backend Developer Intern</div>
+                  <div class="exp-company-new">@ Skynet Global System</div>
+                  <div class="exp-location"><i class="fa-solid fa-location-dot"></i> Nadiad, Gujarat, India</div>
+                </div>
+                <div class="exp-right">
+                  <div class="exp-live-badge"><span class="live-dot"></span> Live Now</div>
+                  <div class="exp-period-new">
+                    <span id="current-date"></span>
+                   </div>
+                </div>
+              </div>
+              <div class="exp-divider"></div>
+              <ul class="exp-points-new">
+               <li><span class="exp-bullet">›</span>Building web applications using Laravel for real-time, live production projects.</li>
+               <li><span class="exp-bullet">›</span>Designing and managing MySql databases for scalable data storage.</li>
+               <li><span class="exp-bullet">›</span>Collaborating with frontend teams to ensure seamless integration.</li>
+               <li><span class="exp-bullet">›</span>Gained hands-on experience in full-stack development across real-world deployments.</li>
+              </ul>
+              <div class="exp-stack">
+               <span class="exp-pill">Laravel</span>
+                <span class="exp-pill">Ajax</span>
+                <span class="exp-pill">MySql</span>
+                <span class="exp-pill">OAuth</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== PROJECTS ========== -->
+      <section class="section" id="projects">
+        <div class="reveal" style="margin-bottom:3rem">
+          <div class="section-label">Projects</div>
+          <h2 class="section-title">Things I've Built</h2>
+          <p class="section-sub">A selection of personal and academic projects showcasing my skills.</p>
+        </div>
+        <div class="projects-grid">
+          <div class="card project-card reveal" data-hover="true" style="transition-delay:0s">
+            <div class="project-thumb" style="background:linear-gradient(135deg,rgba(56,189,248,0.18),rgba(192,132,252,0.15))">
+              <div class="project-thumb-shine"></div>🛒
+            </div>
+            <div class="project-body">
+              <div class="project-stack">
+                <span class="tag tag--purple">React</span>
+                <span class="tag tag--purple">Node.js</span>
+                <span class="tag tag--purple">Express.js</span>
+                <span class="tag tag--purple">MongoDB</span>
+              </div>
+              <div class="project-name">Nike E-Commerce</div>
+              <p class="project-desc">Built a scalable MERN-based e-commerce platform for selling athletic footwear inspired by Nike, with secure user authentication, dynamic cart functionality, and streamlined order processing..</p>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noreferrer" class="proj-link primary" data-hover="true">⌥ GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card project-card reveal" data-hover="true" style="transition-delay:0.1s">
+            <div class="project-thumb" style="background:linear-gradient(135deg,rgba(244,114,182,0.16),rgba(56,189,248,0.12))">
+              <div class="project-thumb-shine"></div>📝
+            </div>
+            <div class="project-body">
+              <div class="project-stack">
+                <span class="tag tag--purple">React</span>
+                <span class="tag tag--purple">Express.js</span>
+                <span class="tag tag--purple">MongoDB</span>
+                <span class="tag tag--purple">JWT</span>
+              </div>
+              <div class="project-name">Digital Grievance Redressal System for Students</div>
+              <p class="project-desc">Full-stack student grievance redressal system featuring role-based JWT authentication and end-to-end complaint lifecycle management, built using the MERN stack with Mongoose for clean data modeling and scalable workflow handling.</p>
+              <div class="project-links">
+                <a href="https://github.com/Dev-Patel1904/DGRS" target="_blank" rel="noreferrer" class="proj-link primary" data-hover="true">⌥ GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card project-card reveal" data-hover="true" style="transition-delay:0.2s">
+            <div class="project-thumb" style="background:linear-gradient(135deg,rgba(192,132,252,0.16),rgba(244,114,182,0.12))">
+              <div class="project-thumb-shine"></div>🛒
+            </div>
+            <div class="project-body">
+              <div class="project-stack">
+                <span class="tag tag--purple">PHP</span>
+                <span class="tag tag--purple">Laravel</span>
+                <span class="tag tag--purple">MySQL</span>
+                <span class="tag tag--purple">HTML</span>
+                <span class="tag tag--purple">CSS</span>
+              </div>
+              <div class="project-name">E-Commerce Gliszen</div>
+              <p class="project-desc">Built a full-stack e-commerce system enabling manufacturers, distributors, and stores to manage products and orders efficiently through a role-based workflow. Developed using PHP and MySQL with structured data handling</p>
+              <div class="project-links">
+                <a href="" target="_blank" rel="noreferrer" class="proj-link primary" data-hover="true">⌥ GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== EDUCATION ========== -->
+      <section class="section section--surface" id="education">
+        <div class="reveal" style="margin-bottom:3rem">
+          <div class="section-label">Education</div>
+          <h2 class="section-title">Academic Journey</h2>
+          <p class="section-sub">Strong academic foundation backed by consistent high performance.</p>
+        </div>
+        <div class="edu-timeline">
+          <div class="edu-item reveal-left" style="transition-delay:0s">
+            <div class="edu-dot"></div>
+            <div class="card edu-card" data-hover="true">
+              <div class="edu-period">2024 – 2026</div>
+              <div class="edu-degree">Master of Computer Application (MCA)</div>
+              <div class="edu-school">Anand Institute of Management and Information Science, Anand</div>
+              <span class="edu-grade">Sem 1: 7.70 SPI | Sem 2: 8.13 SPI | Sem 3: 8.33 SPI</span>
+            </div>
+          </div>
+          <div class="edu-item reveal-left" style="transition-delay:0.13s">
+            <div class="edu-dot"></div>
+            <div class="card edu-card" data-hover="true">
+              <div class="edu-period">2021 – 2024</div>
+              <div class="edu-degree">Bachelor of Commerce (B.Com)</div>
+              <div class="edu-school">Smt. T.J Patel Commerce College, Nadiad</div>
+              <span class="edu-grade">CGPA: 7.25 / 10</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== CONTACT ========== -->
+      <section class="section section--surface" id="contact">
+        <div class="contact-header">
+          <div class="section-label">Contact</div>
+          <h2 class="section-title">Let's Work Together</h2>
+          <p class="contact-intro">I'm open to internship extensions, full-time roles, freelance projects, or just a great conversation about tech!</p>
+        </div>
+        <div class="contact-links-grid">
+          <a href="mailto:devp1904@gmail.com" class="card contact-link reveal" data-hover="true" style="transition-delay:0s">
+            <div class="contact-link-icon" style="background:linear-gradient(135deg,#f472b6,#c084fc)">📧</div>
+            <div>
+              <div class="contact-link-label">Email</div>
+              <div class="contact-link-val">devp1904@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/dev-patel-883502374/" target="_blank" rel="noreferrer" class="card contact-link reveal" data-hover="true" style="transition-delay:0.07s">
+            <div class="contact-link-icon" style="background:linear-gradient(135deg,#38bdf8,#6366f1)">💼</div>
+            <div>
+              <div class="contact-link-label">LinkedIn</div>
+              <div class="contact-link-val">linkedin.com/in/Dev-Patel</div>
+            </div>
+          </a>
+          <a href="https://github.com/Dev-Patel1904" target="_blank" rel="noreferrer" class="card contact-link reveal" data-hover="true" style="transition-delay:0.14s">
+            <div class="contact-link-icon" style="background:linear-gradient(135deg,#c084fc,#38bdf8)">💻</div>
+            <div>
+              <div class="contact-link-label">GitHub</div>
+              <div class="contact-link-val">github.com/Dev-Patel</div>
+            </div>
+          </a>
+         
+        </div>
+        
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Designed &amp; Built with ❤️ by <span>Dev Patel</span> · 2026</p>
+    </footer>
+  </div>
+<!-- current date -->
+<script>
+   const today = new Date();
+ 
+   const options = { month: 'short', day: 'numeric', year: 'numeric' };
+   const formattedDate = today.toLocaleDateString('en-US', options);
+ 
+   document.getElementById('current-date').textContent = formattedDate;
+ </script>
+
+</body>
+</html>
