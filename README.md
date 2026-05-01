@@ -7,7 +7,7 @@ This website showcases my skills, projects, education, and contact details in a 
 
 ## 🚀 Live Demo
 🔗 Add your deployed link here:  
-https://yourportfolio-link.com
+[https://yourportfolio-link.com](https://legendary-tulumba-b52646.netlify.app/)
 
 ---
 
